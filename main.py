@@ -75,11 +75,11 @@ if __name__ == "__main__":
         target_volume=0
         if(i[0]-i[1] > 0):
             action="sell"
-            target_volume=ceil(i[0]-i[1])
+            target_volume=(i[0]-i[1])
             target_price=2.4
         else:
             action="buy"
-            target_volume=ceil(abs(i[0]-i[1]))
+            target_volume=(abs(i[0]-i[1]))
             target_price=2.2
         temp.append(date)
         temp.append(action)
